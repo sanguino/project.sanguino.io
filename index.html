@@ -1,0 +1,24 @@
+<!DOCTYPE html><html lang="en"><head> <meta charset="utf-8"> <meta http-equiv="x-ua-Compatible" content="ie=edge"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta name="description" content="You cannot have everything all at once.">
+
+ <meta property="og:url"                content="http://project.sanguino.io" />
+<meta property="og:type"               content="article" />
+<meta property="og:title"              content="How would you like your project?" />
+<meta property="og:description"        content="You cannot have everything all at once." />
+<meta property="og:image"              content="http://project.sanguino.io/img.png" />
+ 
+<title>How would you like your project?</title> <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet"> <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.4/css/bootstrap3/bootstrap-switch.min.css" rel="stylesheet"> <style type="text/css"> .full { width: 100vw; height: 100vh; } .project { text-align: center; } .project h1{ margin-bottom: 40px; } </style></head><bodY> <div class="full d-flex align-items-center"> <div class="container"> <div class="row flex-items-xs-middle justify-content-center"> <div class="col-xs project"> <h1 class="h4">How would you like your project?</h1> <p><input id="switch-good" type="checkbox" data-on-text="Good" data-off-text="Good" data-on-color="success" data-handle-width="50" data-label-width="0" data-size="large" > </p> <p><input id="switch-cheap" type="checkbox" data-on-text="Cheap" data-off-text="Cheap" data-on-color="primary" data-handle-width="50" data-label-width="0" data-size="large" > </p> <p><input id="switch-fast" type="checkbox" data-on-text="Fast" data-off-text="Fast" data-on-color="danger" data-handle-width="50" data-label-width="0" data-size="large" > </p> </div> </div> </div> </div> <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.4/js/bootstrap-switch.min.js"></script> <script type="text/javascript"> $("input").bootstrapSwitch(); $('input').on('switchChange.bootstrapSwitch', function (event, checked) { var others = $('input').not(event.currentTarget); if (checked && others.eq(0).bootstrapSwitch('state') && others.eq(1).bootstrapSwitch('state')) { others.eq(Math.round(Math.random())).bootstrapSwitch('state', false); } }); </script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-93230706-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</body></html>
