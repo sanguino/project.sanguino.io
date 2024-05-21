@@ -41,7 +41,7 @@ document.addEventListener('keydown', (event) => {
       bingoImg.classList.add('hidden');
       keySequence = '';
     } else if (keySequence === 'bingo') {
-        bingoImg.classList.remove('hidden');
+        bingoImg.classList.toggle('hidden');
         keySequence = '';
     } else if (keySequence === 'back') {
         bingoImg.classList.add('hidden');
